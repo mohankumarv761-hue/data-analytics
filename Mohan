@@ -1,0 +1,63 @@
+import pandas as pd
+
+import numpy as np
+
+9
+
+12
+
+In[7]:
+
+12
+
+13
+
+14
+
+15
+
+arrays=[['Semester 1', 'Semester 1', 'Semester 2', 'Semester 2'], ['Math', 'Science', 'Math', 'Science"]]
+
+index=pd.MultiIndex.from_arrays (arrays, names=("Semester', 'Subject'))
+
+16
+
+data={
+
+17
+
+'Student A': [88,92,85,90],
+
+18
+
+'Student B': [78,85,80,88],
+
+19
+
+'Student c': [92,90,93,95]
+
+20
+
+} df=pd.DataFrame(data, index index)
+
+21
+
+22
+
+print(df)
+
+23
+
+24
+
+#In[8]:
+
+print(df.loc[('Semester 1', 'Math'), 'Student A'])
+
+#In [9]:
+
+print(df.loc[("Semester 1')])
+
+df-df.swaplevel('Semester', 'Subject")
+
+swapped_dfd print(swapped_df)
